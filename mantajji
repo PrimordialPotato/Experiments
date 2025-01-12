@@ -147,7 +147,7 @@ end
 
 -- Black screen check & Fail safe --
 task.spawn(function()
-    task.wait(20)
+    task.wait(120)
     while true do
         game:GetService("TeleportService"):Teleport(10450270085)
         task.wait(10)
