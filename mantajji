@@ -129,7 +129,7 @@ end)
 local Cats = {"Withered Beckoning Cat", "Wooden Beckoning Cat", "Polished Beckoning Cat","Golden Beckoning Cat"}
 local Loti = {"White Lotus","Sapphire Lotus","Jade Lotus","Iridescent Lotus"} -- Did you know the plural of Lotus is Loti 
 local Highlight = {"5 Demon Finger","Maximum Scroll","Domain Shard","Iridescent Lotus","Polished Beckoning Cat","Sapphire Lotus","Fortune Gourd","Demon Finger","Energy Nature Scroll","Purified Curse Hand","Jade Lotus","Cloak of Inferno","Split Soul","Soul Robe","Playful Cloud","Ocean Blue Sailor's Vest","Deep Black Sailor's Vest","Demonic Tobi","Demonic Robe","Rotten Chains"}
-local Runners = {"Soul Curse"} -- Damn monkeys go AEEHOIIII, add to this table if you feel like a boss is running too much
+local Runners = {"Ocean Curse"} -- Damn monkeys go AEEHOIIII, add to this table if you feel like a boss is running too much
 
 local QueueSuccess = "False"
 if Toggle == "ON" then
@@ -355,7 +355,7 @@ task.spawn(function()
             if DamagePercent == 0 then 
                 DamagePercent = math.floor(Percent*10)/10
             end
-            Mobs[Boss].Humanoid.Health = 1
+            Mobs[Boss].Humanoid.Health = 0
         end
         Hit()
         task.wait()
